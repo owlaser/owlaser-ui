@@ -1,7 +1,6 @@
 <!--  -->
 <template>
   <div>
-<!-- 弹出form -->
 <el-dialog title="包的名字" :visible.sync="dialogFormVisible">
 <el-collapse v-model="activeNames" @change="handleChange">
   <el-collapse-item title="下载方式1" name="1">
@@ -157,13 +156,6 @@ export default {
       ]
     };
   },
-
-  components: {},
-
-  computed: {},
-
-  mounted: {},
-
   methods: {
       handleChange(val) {
         console.log(val);
