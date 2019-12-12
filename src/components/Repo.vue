@@ -157,7 +157,7 @@ export default {
     };
   },
   methods: {
-      handleChange(val) {
+      handleChange() {
       }
   }
 };
