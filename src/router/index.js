@@ -5,6 +5,7 @@ import about from '../views/About.vue'
 import Welcome from '@/components/welcome.vue'
 import Repo from '@/components/Repo'
 import Recycle from '@/components/Recycle'
+import Homepage from '@/components/Homepage'
 
 Vue.use(VueRouter)
 
@@ -14,24 +15,24 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home,
-    redirect:'/welcome',
-    children:[
+    redirect: '/welcome',
+    children: [
       {
-        path:'/welcome',
-        component:Welcome
+        path: '/welcome',
+        component: Welcome
       },
       {
-        path:'/Repo',
-        component:Repo
+        path: '/Repo',
+        component: Repo
 
       },
       {
-        path:'/Recycle',
-        component:Recycle
+        path: '/Recycle',
+        component: Recycle
 
       }
-      
-      
+
+
 
     ]
   },
@@ -39,6 +40,11 @@ const routes = [
     path: '/about',
     name: 'about',
     component: about
+  },
+  {
+    path: '/homepage',
+    name: 'homepage',
+    component: Homepage
   }
 ]
 
