@@ -12,7 +12,7 @@ Vue.use(VueRouter)
 const routes = [
   {
 
-    path: '/',
+    path: '/wellcome',
     name: 'home',
     component: Home,
     redirect: '/welcome',
@@ -31,9 +31,6 @@ const routes = [
         component: Recycle
 
       }
-
-
-
     ]
   },
   {
@@ -42,7 +39,7 @@ const routes = [
     component: about
   },
   {
-    path: '/homepage',
+    path: '*',
     name: 'homepage',
     component: Homepage
   }
