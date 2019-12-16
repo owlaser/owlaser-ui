@@ -7,6 +7,7 @@ import Repo from '@/components/Repo'
 import Recycle from '@/components/Recycle'
 import Security from '@/components/Security'
 import Homepage from '@/components/Homepage'
+import Result from '@/components/Result'
 
 Vue.use(VueRouter)
 
@@ -19,7 +20,7 @@ const routes = [
     redirect: '/welcome',
     children: [
       {
-        path: '/welcome',
+        path: '/wellcome',
         component: Welcome
       },
       {
@@ -33,6 +34,10 @@ const routes = [
       {
         path: '/Security',
         component: Security
+      },
+      {
+        path: '/Result',
+        component: Result
       }
     ]
   },
