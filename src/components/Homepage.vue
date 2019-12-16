@@ -142,7 +142,7 @@ export default {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(mty.png) no-repeat;
+  background: url(../assets/mty.png) no-repeat;
   background-size: cover;
   opacity: 0.3;
   animation: anim 25s linear infinite;

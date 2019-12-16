@@ -1,4 +1,4 @@
-<!--  -->
+<!-- 仓库页面 -->
 <template>
   <div>
     <el-dialog title="包的名字" :visible.sync="dialogFormVisible">
@@ -20,16 +20,24 @@
           <div>4</div>
         </el-collapse-item>
       </el-collapse>
-      <!-- kaishi  zxc -->
-
-      <!-- jieshu  zxc -->
     </el-dialog>
+
+    <!-- 侧拉菜单 -->
+<el-drawer
+  title="我是标题"
+  :visible.sync="drawer"
+  :direction="rtl">
+  <span>我来啦!</span>
+</el-drawer>
+
 
     <el-card class="box-card">
       <el-row :gutter="20">
-        <el-col :span="4">
+        <el-col :span="2">
           <div class="block">
-            <el-cascader placeholder="选择仓库" :options="options" filterable></el-cascader>
+           <el-button @click="drawer = true" type="primary" style="margin-left: 16px;">
+            选择仓库
+           </el-button>
           </div>
         </el-col>
 
@@ -129,6 +137,7 @@
 export default {
   data() {
     return {
+        drawer: false,
       activeNames: ["1"],
       dialogFormVisible: false,
       dialogFormVisible1: false,
