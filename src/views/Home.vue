@@ -20,6 +20,7 @@
     <el-menu-item index="/Recycle">回收站</el-menu-item>
   </el-submenu>
   <el-menu-item index="3">镜像库</el-menu-item>
+  <el-menu-item index="/Security">安全扫描</el-menu-item>
   </el-menu>
     <router-view></router-view>
   </div>
