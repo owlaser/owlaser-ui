@@ -1,5 +1,6 @@
 <!-- 仓库页面 -->
 <template>
+
   <div>
     <el-dialog title="包的名字" :visible.sync="dialogFormVisible">
       <el-collapse v-model="activeNames" @change="handleChange">
@@ -23,26 +24,40 @@
     </el-dialog>
 
     <!-- 侧拉菜单 -->
-<el-drawer
-  title="我是标题"
-  :visible.sync="drawer"
-  :direction="rtl">
-  <span>我来啦!</span>
-</el-drawer>
-
+    <el-drawer size="20%" title="仓库列表" :visible.sync="drawer" :direction="direction">
+      <el-menu
+        default-active="2"
+        class="el-menu-vertical-demo"
+        @open="handleOpen"
+        @close="handleClose"
+        background-color="#545c64"
+        text-color="#fff"
+        active-text-color="#ffd04b"
+      >
+        <!-- 一级菜单 -->
+        <el-submenu :index="item.id" v-for="item in menulist" :key="item.id">
+          <template slot="title">
+            <i class="el-icon-folder"></i>
+            <span>{{item.name}}</span>
+          </template>
+          <!-- 二级菜单 -->
+          <el-menu-item index="1-1">选项1</el-menu-item>
+          <el-menu-item index="1-2">选项2</el-menu-item>
+          <el-menu-item index="1-3">选项3</el-menu-item>
+        </el-submenu>
+      </el-menu>
+    </el-drawer>
 
     <el-card class="box-card">
       <el-row :gutter="20">
         <el-col :span="2">
           <div class="block">
-           <el-button @click="drawer = true" type="primary" style="margin-left: 16px;">
-            选择仓库
-           </el-button>
+            <el-button @click="drawer = true" type="primary" style="margin-left: 10px;">选择仓库</el-button>
           </div>
         </el-col>
 
         <el-col :span="7">
-          <el-input placeholder="请输入内容">
+          <el-input placeholder="查找组件">
             <el-button slot="append" icon="el-icon-search"></el-button>
           </el-input>
         </el-col>
@@ -59,13 +74,8 @@
           <el-upload
             class="upload-demo"
             action="https://jsonplaceholder.typicode.com/posts/"
-            :on-preview="handlePreview"
-            :on-remove="handleRemove"
-            :before-remove="beforeRemove"
             multiple
             :limit="3"
-            :on-exceed="handleExceed"
-            :file-list="fileList"
           >
             <el-button size="small" type="primary">点击上传</el-button>
           </el-upload>
@@ -137,7 +147,33 @@
 export default {
   data() {
     return {
+      // 菜单数据
+      menulist:[
+        {
+          id:'1',
+          name:'project1',
+          // children[
+            
+          // ]
+        },
+ {
+          id:'2',
+          name:'project2',
+          // children[
+            
+          // ]
+        },
+       {
+          id:'3',
+          name:'project3',
+          // children[
+            
+          // ]
+        },
+
+      ],
         drawer: false,
+        direction: 'rtl',
       activeNames: ["1"],
       dialogFormVisible: false,
       dialogFormVisible1: false,
@@ -223,9 +259,12 @@ export default {
     };
   },
   methods: {
-    handleChange() {}
-  }
-};
+    handleChange() {},
+     handleOpen() {
+      },
+      handleClose() {}
+  }}
 </script>
+
 <style lang='scss' scoped>
 </style>

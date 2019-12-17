@@ -10,19 +10,19 @@
       active-text-color="#2980b9"
       router
     >
-      <el-menu-item style="padding-left: 0; ">
+      <el-menu-item index="/" style="padding-left: 0; ">
         <span style="margin-left:15px;font-size:35px;">OWLASER</span>
       </el-menu-item>
-      <el-menu-item index="1" style="margin-left:50px;font-size:18px;">主页</el-menu-item>
+      <el-menu-item index="/welcome" style="margin-left:50px;font-size:18px;">扫描页</el-menu-item>
       <el-submenu index="2">
         <template slot="title">
           <p style="font-size:18px;">仓库</p>
         </template>
         <el-menu-item index="/Repo" style="font-size:18px;">私有库</el-menu-item>
-        <el-menu-item index="2-2" style="font-size:18px;">公有库</el-menu-item>
+        <el-menu-item index="#" style="font-size:18px;">公有库</el-menu-item>
         <el-menu-item index="/Recycle" style="font-size:18px;">回收站</el-menu-item>
       </el-submenu>
-      <el-menu-item index="3" style="font-size:18px;">镜像库</el-menu-item>
+      <el-menu-item index="#" style="font-size:18px;">镜像库</el-menu-item>
       <el-menu-item index="/Security" style="font-size:18px;">安全扫描</el-menu-item>
       <el-menu-item style="position:fixed; right:50px;font-size:18px;">个人中心</el-menu-item>
     </el-menu>
@@ -34,9 +34,7 @@
 export default {
   data() {
     return {
-      activeIndex: "1",
-      activeIndex2: "1",
-      activeIndex3: "1"
+      activeIndex1: "1",
     };
   },
 

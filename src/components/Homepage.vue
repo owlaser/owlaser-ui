@@ -70,7 +70,7 @@
         <br />
         <p>PKU-HUAWEI</p>
 
-        <router-link to="/wellcome">Get Staerted</router-link>
+        <router-link to="/welcome">Get Staerted</router-link>
       </div>
     </div>
     <!-- <div class="home-page"></div> -->

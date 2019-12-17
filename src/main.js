@@ -4,7 +4,9 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'bootstrap3/dist/css/bootstrap.css'
+import axios from 'axios'
 
+Vue.prototype.$http = axios
 
 Vue.use(ElementUI)//全局使用ElementUI
 

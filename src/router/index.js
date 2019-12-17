@@ -14,14 +14,14 @@ Vue.use(VueRouter)
 const routes = [
   {
 
-    path: '/wellcome',
+    path: '/welcome',
     name: 'home',
     component: Home,
     redirect: '/welcome',
     children: [
       {
-        path: '/wellcome',
-        component: Welcome
+        path: '/welcome',
+        component: Welcome,
       },
       {
         path: '/Repo',
@@ -47,7 +47,7 @@ const routes = [
     component: about
   },
   {
-    path: '*',
+    path: '/',
     name: 'homepage',
     component: Homepage
   }
