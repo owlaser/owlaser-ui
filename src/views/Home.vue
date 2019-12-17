@@ -14,9 +14,9 @@
         <span style="margin-left:15px;font-size:35px;">OWLASER</span>
       </el-menu-item>
       <el-menu-item index="/welcome" style="margin-left:50px;font-size:18px;">扫描页</el-menu-item>
-      <el-submenu index="2">
+      <el-submenu index="2" style="width:150px">
         <template slot="title">
-          <p style="font-size:18px;">仓库</p>
+          <span style="font-size:18px;">仓库</span>
         </template>
         <el-menu-item index="/Repo" style="font-size:18px;">私有库</el-menu-item>
         <el-menu-item index="#" style="font-size:18px;">公有库</el-menu-item>
@@ -24,7 +24,7 @@
       </el-submenu>
       <el-menu-item index="#" style="font-size:18px;">镜像库</el-menu-item>
       <el-menu-item index="/Security" style="font-size:18px;">安全扫描</el-menu-item>
-      <el-menu-item style="position:fixed; right:50px;font-size:18px;">个人中心</el-menu-item>
+      <el-menu-item style="float:right;font-size:18px;margin-right:20px">个人中心</el-menu-item>
     </el-menu>
     <router-view></router-view>
   </div>
@@ -34,7 +34,7 @@
 export default {
   data() {
     return {
-      activeIndex1: "1",
+      activeIndex1: "1"
     };
   },
 
@@ -68,7 +68,4 @@ export default {
 .el-main {
   background-color: #eaedf1;
 } */
-.el-menu-demo {
-  font-size: 1000px;
-}
 </style>

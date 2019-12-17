@@ -4,14 +4,12 @@
       <!-- <div class="page-content"> -->
       <div>
         <div class="a-input">
-          上传组件包
           <input type="file" style="opacity: 0;" />
-          <router-link to="/Result" class="a-upload">点击扫描</router-link>
         </div>
+        <router-link to="/Result" class="a-upload">点击扫描</router-link>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
