@@ -20,7 +20,7 @@ const routes = [
     redirect: '/welcome',
     children: [
       {
-        path: '/welcome',
+        path: '/',
         component: Welcome,
       },
       {
