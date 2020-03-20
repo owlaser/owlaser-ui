@@ -57,7 +57,7 @@
         </el-form>
         <div>
           <el-button type="primary" index="/regist">注 册</el-button>
-          <el-button @click="dialogFormVisible = false">取 消</el-button>
+          <el-button @click="dialogFormVisible2 = false">取 消</el-button>
         </div>
       </el-dialog>
 
