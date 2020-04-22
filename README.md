@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://cdn.jsdelivr.net/gh/tyrone-wu/PicRepo/o-logo.png"/>
+<img src="https://cdn.jsdelivr.net/gh/tyrone-wu/PicRepo/o-logo.png"/ width="200px">
 
 </p>
 
