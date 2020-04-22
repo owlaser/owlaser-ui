@@ -1,0 +1,30 @@
+/* 全局样式表 */
+
+html,
+body,
+#app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  font-family: "Avenir", Helvetica, Arial, "montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+a,
+.router-link {
+  text-decoration: none;
+}
+
+.el-table {
+  margin-top: 10px;
+}
+
+.el-table th {
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+}
